@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,12 +16,12 @@
 <title>Flipmarto - Multi-purpose E-commerce Html5 Template</title>
 
 <!-- Favicon Icon -->
-<link rel="shortcut icon" href="assets/images/favicon.png" />
+<link rel="shortcut icon" href="{% static '/images/favicon.png' %}" />
 
 <!-- inject css start -->
 
-<link href="assets/css/theme-plugin.css" rel="stylesheet" />
-<link href="assets/css/theme.min.css" rel="stylesheet" />
+<link href="{% static 'css/theme-plugin.css' %}" rel="stylesheet" />
+<link href="{% static 'theme.min.css' %}" rel="stylesheet" />
 
 <!-- inject css end -->
 
@@ -36,7 +37,7 @@
 
 <div id="ht-preloader">
   <div class="loader clear-loader">
-    <img class="img-fluid" src="assets/images/loader.gif" alt="">
+    <img class="img-fluid" src="{% static '/images/loader.gif' %}" alt="">
   </div>
 </div>
 
@@ -93,11 +94,11 @@
         <div class="row"> 
           <!--menu start-->
           <div class="col">
-            <nav class="navbar navbar-expand-lg navbar-light position-static"> <a class="navbar-brand logo" href="index.html"> <img class="img-fluid" src="assets/images/logo.png" alt=""> </a>
+            <nav class="navbar navbar-expand-lg navbar-light position-static"> <a class="navbar-brand logo" href="index.html"> <img class="img-fluid" src="{% static '/images/logo.png' %}" alt=""> </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto mr-auto">
-                  <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle active" href="#" data-toggle="dropdown">Home</a>
+                  <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle active" href="{% url 'home'%}" data-toggle="dropdown">Home</a>
                     <ul class="dropdown-menu">
                       <li><a href="index.html">Fashion 1</a> </li>
                       <li><a href="index-2.html">Fashion 2</a> </li>
@@ -187,7 +188,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-lg-4 d-none d-lg-block pr-2"> <img class="img-fluid rounded-bottom rounded-top" src="assets/images/header-img.jpg" alt="..."> </div>
+                          <div class="col-lg-4 d-none d-lg-block pr-2"> <img class="img-fluid rounded-bottom rounded-top" src="{% static '/images/header-img.jpg' %}" alt="..."> </div>
                         </div>
                       </div>
                     </div>
@@ -282,8 +283,8 @@
                 <div class="dropdown cart_dropdown"> <a class="d-flex align-items-center" href="#"> <span class="bg-white pr-2 pl-0 py-1 rounded" data-cart-items="2"> <i class="las la-shopping-bag"></i> </span> </a>
                   <div class="cart_box dropdown-menu dropdown-menu-right">
                     <ul class="cart_list">
-                      <li> <a href="#" class="item_remove"><i class="ion-ios-close-empty"></i></a> <a href="#"><img src="assets/images/product/p8.jpg" alt="cart_thumb1">Unpaired Running Shoes</a> <span class="cart_quantity"> 1 x <span class="cart_amount"> <span class="price_symbole">$</span></span>78.00</span> </li>
-                      <li> <a href="#" class="item_remove"><i class="ion-ios-close-empty"></i></a> <a href="#"><img src="assets/images/product/p12.jpg" alt="cart_thumb2">Unpaired Running Shoes</a> <span class="cart_quantity"> 1 x <span class="cart_amount"> <span class="price_symbole">$</span></span>81.00</span> </li>
+                      <li> <a href="#" class="item_remove"><i class="ion-ios-close-empty"></i></a> <a href="#"><img src="{% static '/images/product/p8.jpg' %}" alt="cart_thumb1">Unpaired Running Shoes</a> <span class="cart_quantity"> 1 x <span class="cart_amount"> <span class="price_symbole">$</span></span>78.00</span> </li>
+                      <li> <a href="#" class="item_remove"><i class="ion-ios-close-empty"></i></a> <a href="#"><img src="{% static '/images/product/p12.jpg' %}" alt="cart_thumb2">Unpaired Running Shoes</a> <span class="cart_quantity"> 1 x <span class="cart_amount"> <span class="price_symbole">$</span></span>81.00</span> </li>
                     </ul>
                     <div class="cart_footer">
                       <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span class="price_symbole">$</span></span>159.00</p>
@@ -514,7 +515,6 @@
             <div class="mr-4"> <i class="las la-envelope ic-2x icon-img"></i> </div>
             <div>
               <h6 class="mb-1 text-white font-w-5">Email us</h6>
-              <a class="text-muted font-w-4" href="mailto:themeht23@gmail.com"> themesground@gmail.com</a><br>
               <a class="text-muted font-w-4" href="mailto:themeht23@gmail.com"> flipmarto@gmail.com</a> </div>
           </div>
         </div>
@@ -530,14 +530,14 @@
         </div>
       </div>
       <div class="row text-muted align-items-center pt-9">
-        <div class="col-md-7 font-w-4"><small>Copyright ©2020 themesground. All Rights Reserved.</small> </div>
+        <div class="col-md-7 font-w-4"><small>Copyright ©2023. All Rights Reserved.</small> </div>
         <div class="col-md-5 text-md-right mt-3 mt-md-0">
           <ul class="list-inline mb-0">
-            <li class="list-inline-item"> <a href="#"> <img class="img-fluid" src="assets/images/pay-icon/01.png" alt=""> </a> </li>
-            <li class="list-inline-item"> <a href="#"> <img class="img-fluid" src="assets/images/pay-icon/02.png" alt=""> </a> </li>
-            <li class="list-inline-item"> <a href="#"> <img class="img-fluid" src="assets/images/pay-icon/03.png" alt=""> </a> </li>
-            <li class="list-inline-item"> <a href="#"> <img class="img-fluid" src="assets/images/pay-icon/04.png" alt=""> </a> </li>
-            <li class="list-inline-item"> <a href="#"> <img class="img-fluid" src="assets/images/pay-icon/05.png" alt=""> </a> </li>
+            <li class="list-inline-item"> <a href="#"> <img class="img-fluid" src="{% static '/images/pay-icon/01.png' %}" alt=""> </a> </li>
+            <li class="list-inline-item"> <a href="#"> <img class="img-fluid" src="{% static '/images/pay-icon/02.png' %}" alt=""> </a> </li>
+            <li class="list-inline-item"> <a href="#"> <img class="img-fluid" src="{% static '/images/pay-icon/03.png' %}" alt=""> </a> </li>
+            <li class="list-inline-item"> <a href="#"> <img class="img-fluid" src="{% static '/images/pay-icon/04.png' %}" alt=""> </a> </li>
+            <li class="list-inline-item"> <a href="#"> <img class="img-fluid" src="{% static '/images/pay-icon/05.png' %}" alt=""> </a> </li>
           </ul>
         </div>
       </div>
